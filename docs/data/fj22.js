@@ -3,9 +3,53 @@ window.JUMPSTART_SETS["fj22"] = {
   "setCode": "fj22",
   "setName": "Jumpstart 2022 Front Cards",
   "sourceUrl": "https://scryfall.com/search?q=e%3Afj22&include_extras=true",
-  "generatedAt": "2026-07-06T23:09:36.307172+00:00",
-  "packCount": 14,
+  "generatedAt": "2026-07-06T23:28:47.342086+00:00",
+  "packCount": 46,
+  "ownedPackCount": 15,
+  "hasOwnershipFile": true,
   "packs": [
+    {
+      "id": "ff972493-db45-4203-982c-ecf0c0bc672f",
+      "collectorNumber": "1",
+      "name": "Blink",
+      "colorCodes": [
+        "W"
+      ],
+      "colorLabel": "White",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/f/f/ff972493-db45-4203-982c-ecf0c0bc672f.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/1/blink?utm_source=api"
+    },
+    {
+      "id": "97334a91-87ad-41bf-b481-381fd5def7b4",
+      "collectorNumber": "2",
+      "name": "Cats",
+      "colorCodes": [
+        "W"
+      ],
+      "colorLabel": "White",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/9/7/97334a91-87ad-41bf-b481-381fd5def7b4.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/2/cats?utm_source=api"
+    },
+    {
+      "id": "eb4c94df-5c80-4513-92f7-95df8aaa802a",
+      "collectorNumber": "3",
+      "name": "Constellation",
+      "colorCodes": [
+        "W"
+      ],
+      "colorLabel": "White",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/e/b/eb4c94df-5c80-4513-92f7-95df8aaa802a.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/3/constellation?utm_source=api"
+    },
     {
       "id": "26da8a11-ae74-44c4-b52b-304feefd3ace",
       "collectorNumber": "4",
@@ -15,8 +59,24 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "White",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/2/6/26da8a11-ae74-44c4-b52b-304feefd3ace.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/4/holy?utm_source=api"
+    },
+    {
+      "id": "ae25f4d4-f36a-4f6d-9d2a-61bd62c7932c",
+      "collectorNumber": "5",
+      "name": "Knights",
+      "colorCodes": [
+        "W"
+      ],
+      "colorLabel": "White",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/a/e/ae25f4d4-f36a-4f6d-9d2a-61bd62c7932c.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/5/knights?utm_source=api"
     },
     {
       "id": "67391db5-8f46-46ef-8a69-ce1456f29d95",
@@ -27,6 +87,8 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "White",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/6/7/67391db5-8f46-46ef-8a69-ce1456f29d95.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/6/law?utm_source=api"
     },
@@ -39,6 +101,8 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "White",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/7/9/79676ee8-b5fc-4216-8372-8666edae42a7.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/7/spirits?utm_source=api"
     },
@@ -51,6 +115,8 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "White",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/c/e/ceef0331-9b5b-4578-b361-749d326244d5.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/8/teamwork?utm_source=api"
     },
@@ -63,6 +129,8 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "White",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/2/c/2c21e5b2-97d5-43a6-b46e-b550defbfca5.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/9/vehicles?utm_source=api"
     },
@@ -75,8 +143,52 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Blue",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/8/a/8a55b3e7-be27-4ba8-a7b2-0f165f842652.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/10/detective?utm_source=api"
+    },
+    {
+      "id": "5fc5d1d7-0013-4d6e-8355-5eb99736d77d",
+      "collectorNumber": "11",
+      "name": "Faeries",
+      "colorCodes": [
+        "U"
+      ],
+      "colorLabel": "Blue",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/5/f/5fc5d1d7-0013-4d6e-8355-5eb99736d77d.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/11/faeries?utm_source=api"
+    },
+    {
+      "id": "585bb443-3178-4e77-bab2-fe5a8eca794c",
+      "collectorNumber": "12",
+      "name": "Go to School",
+      "colorCodes": [
+        "U"
+      ],
+      "colorLabel": "Blue",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/5/8/585bb443-3178-4e77-bab2-fe5a8eca794c.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/12/go-to-school?utm_source=api"
+    },
+    {
+      "id": "6d7cfeeb-4652-4a8c-88bc-8c9115b4c981",
+      "collectorNumber": "13",
+      "name": "Inventive",
+      "colorCodes": [
+        "U"
+      ],
+      "colorLabel": "Blue",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/6/d/6d7cfeeb-4652-4a8c-88bc-8c9115b4c981.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/13/inventive?utm_source=api"
     },
     {
       "id": "d44274b6-b8d0-421c-96ff-ae3b03204bce",
@@ -87,6 +199,8 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Blue",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/d/4/d44274b6-b8d0-421c-96ff-ae3b03204bce.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/14/merfolk?utm_source=api"
     },
@@ -99,8 +213,38 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Blue",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/3/5/3536118d-d525-4184-9cb9-cf2480a3a208.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/15/scrying?utm_source=api"
+    },
+    {
+      "id": "4d21652d-8899-425f-aef7-a44a0a95cbea",
+      "collectorNumber": "16",
+      "name": "Shapeshifters",
+      "colorCodes": [
+        "U"
+      ],
+      "colorLabel": "Blue",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/4/d/4d21652d-8899-425f-aef7-a44a0a95cbea.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/16/shapeshifters?utm_source=api"
+    },
+    {
+      "id": "dc817126-b671-4239-94c4-2c8831ceaa38",
+      "collectorNumber": "17",
+      "name": "Snow",
+      "colorCodes": [
+        "U"
+      ],
+      "colorLabel": "Blue",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/d/c/dc817126-b671-4239-94c4-2c8831ceaa38.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/17/snow?utm_source=api"
     },
     {
       "id": "849ba60b-fb0c-45bb-8d82-94e70089f815",
@@ -111,6 +255,8 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Blue",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/8/4/849ba60b-fb0c-45bb-8d82-94e70089f815.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/18/think-again?utm_source=api"
     },
@@ -123,8 +269,38 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Black",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/1/6/16e06e66-a2dd-42e8-bf65-1e23a3fd3ce0.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/19/boneyard?utm_source=api"
+    },
+    {
+      "id": "682942d8-832f-4c5b-b3ab-dab8e02b0c46",
+      "collectorNumber": "20",
+      "name": "Cruel",
+      "colorCodes": [
+        "B"
+      ],
+      "colorLabel": "Black",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/6/8/682942d8-832f-4c5b-b3ab-dab8e02b0c46.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/20/cruel?utm_source=api"
+    },
+    {
+      "id": "63349d48-ea9d-41e2-9b59-8c5461a3d1e1",
+      "collectorNumber": "21",
+      "name": "Demons",
+      "colorCodes": [
+        "B"
+      ],
+      "colorLabel": "Black",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/6/3/63349d48-ea9d-41e2-9b59-8c5461a3d1e1.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/21/demons?utm_source=api"
     },
     {
       "id": "dac9dfaf-5877-44c0-a7f6-d0ba5477c24d",
@@ -135,8 +311,66 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Black",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/d/a/dac9dfaf-5877-44c0-a7f6-d0ba5477c24d.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/22/fangs?utm_source=api"
+    },
+    {
+      "id": "c36f971b-8c5e-4d3c-a239-a8639ad0bff0",
+      "collectorNumber": "23",
+      "name": "Gross",
+      "colorCodes": [
+        "B"
+      ],
+      "colorLabel": "Black",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/c/3/c36f971b-8c5e-4d3c-a239-a8639ad0bff0.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/23/gross?utm_source=api"
+    },
+    {
+      "id": "8bcddaec-49d0-415f-ac35-b86ac3e4d3a7",
+      "collectorNumber": "24",
+      "name": "Morbid",
+      "colorCodes": [
+        "B"
+      ],
+      "colorLabel": "Black",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/8/b/8bcddaec-49d0-415f-ac35-b86ac3e4d3a7.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/24/morbid?utm_source=api"
+    },
+    {
+      "id": "46f7b269-1589-4d82-9784-57a783833f42",
+      "collectorNumber": "25",
+      "name": "Rats",
+      "colorCodes": [
+        "B"
+      ],
+      "colorLabel": "Black",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/4/6/46f7b269-1589-4d82-9784-57a783833f42.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/25/rats?utm_source=api"
+    },
+    {
+      "id": "6e3cf13e-704f-44bf-ae38-bc75319ea5fd",
+      "collectorNumber": "26",
+      "name": "Unlucky Thirteen",
+      "colorCodes": [
+        "B"
+      ],
+      "colorLabel": "Black",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/6/e/6e3cf13e-704f-44bf-ae38-bc75319ea5fd.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/26/unlucky-thirteen?utm_source=api"
     },
     {
       "id": "0e55eba6-afd6-4af3-8cfb-d19ac13b179c",
@@ -147,8 +381,108 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Black",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/0/e/0e55eba6-afd6-4af3-8cfb-d19ac13b179c.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/27/zombies?utm_source=api"
+    },
+    {
+      "id": "c4250f34-348c-4739-9d02-ae335cbef823",
+      "collectorNumber": "28",
+      "name": "Cycling",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/c/4/c4250f34-348c-4739-9d02-ae335cbef823.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/28/cycling?utm_source=api"
+    },
+    {
+      "id": "29446afc-dbb0-4884-9f17-074d625a0c56",
+      "collectorNumber": "29",
+      "name": "Dragons",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/2/9/29446afc-dbb0-4884-9f17-074d625a0c56.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/29/dragons?utm_source=api"
+    },
+    {
+      "id": "03411065-5240-4e8f-831f-e0ef8ac04447",
+      "collectorNumber": "30",
+      "name": "Experimental",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/0/3/03411065-5240-4e8f-831f-e0ef8ac04447.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/30/experimental?utm_source=api"
+    },
+    {
+      "id": "dd501506-f01c-4010-b876-0d85f76bdace",
+      "collectorNumber": "31",
+      "name": "Fiery",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/d/d/dd501506-f01c-4010-b876-0d85f76bdace.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/31/fiery?utm_source=api"
+    },
+    {
+      "id": "5a98b543-de9d-43a3-9b79-df3851f70c1b",
+      "collectorNumber": "32",
+      "name": "Goblins",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
+      "imageUrl": "https://cards.scryfall.io/normal/front/5/a/5a98b543-de9d-43a3-9b79-df3851f70c1b.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/32/goblins?utm_source=api"
+    },
+    {
+      "id": "a5ed368d-7813-4fc7-a9a1-880a2a34b823",
+      "collectorNumber": "33",
+      "name": "Raid",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/a/5/a5ed368d-7813-4fc7-a9a1-880a2a34b823.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/33/raid?utm_source=api"
+    },
+    {
+      "id": "11283c34-3872-4d3f-bb55-c2f7b941fd1d",
+      "collectorNumber": "34",
+      "name": "Speedy",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/1/1/11283c34-3872-4d3f-bb55-c2f7b941fd1d.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/34/speedy?utm_source=api"
     },
     {
       "id": "9799f443-6dac-42cb-9e0d-f91695b4a97f",
@@ -159,8 +493,136 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Red",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/9/7/9799f443-6dac-42cb-9e0d-f91695b4a97f.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/35/spicy?utm_source=api"
+    },
+    {
+      "id": "5e138adb-32ba-4b63-8964-5447bc353161",
+      "collectorNumber": "36",
+      "name": "Treasure",
+      "colorCodes": [
+        "R"
+      ],
+      "colorLabel": "Red",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/5/e/5e138adb-32ba-4b63-8964-5447bc353161.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/36/treasure?utm_source=api"
+    },
+    {
+      "id": "1f6b932a-3ca3-453f-85bb-c66025ee8b76",
+      "collectorNumber": "37",
+      "name": "Eldrazi",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/1/f/1f6b932a-3ca3-453f-85bb-c66025ee8b76.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/37/eldrazi?utm_source=api"
+    },
+    {
+      "id": "dcbf5e8c-5aaa-456a-8c47-2318b760221b",
+      "collectorNumber": "38",
+      "name": "Elves",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/d/c/dcbf5e8c-5aaa-456a-8c47-2318b760221b.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/38/elves?utm_source=api"
+    },
+    {
+      "id": "1c0f4661-8813-48cd-a99f-154ea7872bd1",
+      "collectorNumber": "39",
+      "name": "Ferocious",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/1/c/1c0f4661-8813-48cd-a99f-154ea7872bd1.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/39/ferocious?utm_source=api"
+    },
+    {
+      "id": "78930a2f-7ccd-4077-804a-486bd03ee09d",
+      "collectorNumber": "40",
+      "name": "Gigantic",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/7/8/78930a2f-7ccd-4077-804a-486bd03ee09d.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/40/gigantic?utm_source=api"
+    },
+    {
+      "id": "15e0759f-a6e7-4a08-b831-303d2183882d",
+      "collectorNumber": "41",
+      "name": "Insects",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/1/5/15e0759f-a6e7-4a08-b831-303d2183882d.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/41/insects?utm_source=api"
+    },
+    {
+      "id": "658c6711-7ac6-45c3-a80f-55dd1efd03aa",
+      "collectorNumber": "42",
+      "name": "Landfall",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/6/5/658c6711-7ac6-45c3-a80f-55dd1efd03aa.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/42/landfall?utm_source=api"
+    },
+    {
+      "id": "c106ad2b-351e-4635-a835-0484da2259ac",
+      "collectorNumber": "43",
+      "name": "Multi-Headed",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/c/1/c106ad2b-351e-4635-a835-0484da2259ac.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/43/multi-headed?utm_source=api"
+    },
+    {
+      "id": "319306e6-f7f4-4a0d-ba2c-2d00ce29fb00",
+      "collectorNumber": "44",
+      "name": "Primates",
+      "colorCodes": [
+        "G"
+      ],
+      "colorLabel": "Green",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/3/1/319306e6-f7f4-4a0d-ba2c-2d00ce29fb00.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/44/primates?utm_source=api"
     },
     {
       "id": "86fc74b1-577c-4ffe-96f4-5a1a1777b5c7",
@@ -171,8 +633,22 @@ window.JUMPSTART_SETS["fj22"] = {
       ],
       "colorLabel": "Green",
       "isMulticolor": false,
+      "isOwned": true,
+      "excludedFromRandomizer": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/8/6/86fc74b1-577c-4ffe-96f4-5a1a1777b5c7.jpg",
       "scryfallUri": "https://scryfall.com/card/fj22/45/wolves?utm_source=api"
+    },
+    {
+      "id": "7a83acc1-2588-489b-a5cd-a53123fdc088",
+      "collectorNumber": "46",
+      "name": "Urza's",
+      "colorCodes": [],
+      "colorLabel": "Colorless",
+      "isMulticolor": false,
+      "isOwned": false,
+      "excludedFromRandomizer": true,
+      "imageUrl": "https://cards.scryfall.io/normal/front/7/a/7a83acc1-2588-489b-a5cd-a53123fdc088.jpg",
+      "scryfallUri": "https://scryfall.com/card/fj22/46/urzas?utm_source=api"
     }
   ]
 };

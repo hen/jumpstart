@@ -44,6 +44,10 @@ function allPacks() {
   return individualSets().flatMap((setPayload) => setPayload.packs);
 }
 
+function eligiblePacks(packs) {
+  return packs.filter((pack) => pack.isOwned !== false);
+}
+
 function areCompatiblePacks(firstPack, secondPack, pairingMode) {
   if (firstPack.id === secondPack.id) {
     return false;
@@ -111,7 +115,7 @@ function drawStandardMatchup(packs) {
 }
 
 function drawSetVsSetMatchup() {
-  const sets = individualSets();
+  const sets = individualSets().filter((setPayload) => eligiblePacks(setPayload.packs).length >= 2);
   if (sets.length < 2) {
     throw new Error("Set Vs Set requires at least two sets.");
   }
@@ -120,8 +124,8 @@ function drawSetVsSetMatchup() {
     try {
       const [meSet, youSet] = shuffle(sets).slice(0, 2);
       return {
-        me: pickPair(meSet.packs, new Set(), state.pairingMode),
-        you: pickPair(youSet.packs, new Set(), state.pairingMode),
+        me: pickPair(eligiblePacks(meSet.packs), new Set(), state.pairingMode),
+        you: pickPair(eligiblePacks(youSet.packs), new Set(), state.pairingMode),
         meSet,
         youSet,
       };
@@ -183,13 +187,13 @@ function hideSelection() {
 
 function loadPacks() {
   if (state.setCode === SET_SELECTIONS.ALL_SETS) {
-    state.packs = allPacks();
+    state.packs = eligiblePacks(allPacks());
     state.setName = "All Sets";
     return;
   }
 
   if (state.setCode === SET_SELECTIONS.SET_VS_SET) {
-    state.packs = allPacks();
+    state.packs = eligiblePacks(allPacks());
     state.setName = "Set Vs Set";
     return;
   }
@@ -199,17 +203,17 @@ function loadPacks() {
     throw new Error("Pack data is missing.");
   }
 
-  state.packs = payload.packs;
+  state.packs = eligiblePacks(payload.packs);
   state.setName = payload.setName;
 }
 
 function updateReadyStatus() {
   if (state.setCode === SET_SELECTIONS.SET_VS_SET) {
-    statusMessage.textContent = `Set Vs Set • ${individualSets().length} sets ready`;
+    statusMessage.textContent = `Set Vs Set • ${individualSets().filter((setPayload) => eligiblePacks(setPayload.packs).length >= 2).length} sets ready`;
     return;
   }
 
-  statusMessage.textContent = `${state.setName} • ${state.packs.length} packs ready`;
+  statusMessage.textContent = `${state.setName} • ${state.packs.length} owned packs ready`;
 }
 
 function initializeSetOptions() {
