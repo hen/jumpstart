@@ -30,3 +30,6 @@ Add the FJ22 set
 
 [2026-07-06T23:22:07.978+00:00]
 Change the logic so that js and json file retain the full dataset, but marks which ones to exclude from the randomizer based on those not present in the owned text file for the set. Include a stage where the owned files names are validated against the names of packs in the set.
+
+[2026-07-06T23:32:01.504+00:00]
+add support for FTLA and review the names in ftla-owned.txt
