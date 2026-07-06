@@ -2,8 +2,8 @@
   "setCode": "fjmp",
   "setName": "Jumpstart Front Cards",
   "sourceUrl": "https://scryfall.com/search?q=e%3Afjmp&include_extras=true",
-  "generatedAt": "2026-07-06T22:18:20.982985+00:00",
-  "packCount": 46,
+  "generatedAt": "2026-07-06T23:09:36.385881+00:00",
+  "packCount": 39,
   "packs": [
     {
       "id": "2eb7db6d-5e11-433a-82ba-467093c68234",
@@ -40,18 +40,6 @@
       "isMulticolor": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/6/c/6c0966d2-3be6-499f-9c35-b7201f450e9b.jpg",
       "scryfallUri": "https://scryfall.com/card/fjmp/3/archaeology?utm_source=api"
-    },
-    {
-      "id": "0867e879-cbee-4ee1-be8c-b7ff1bcfa6d0",
-      "collectorNumber": "4",
-      "name": "Basri",
-      "colorCodes": [
-        "W"
-      ],
-      "colorLabel": "White",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/0/8/0867e879-cbee-4ee1-be8c-b7ff1bcfa6d0.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/4/basri?utm_source=api"
     },
     {
       "id": "ef524ce0-b418-458c-b56e-0fbea3aa1142",
@@ -150,30 +138,6 @@
       "scryfallUri": "https://scryfall.com/card/fjmp/12/dragons?utm_source=api"
     },
     {
-      "id": "be1d8ebf-efa5-4624-985c-07a85be09258",
-      "collectorNumber": "13",
-      "name": "Elves",
-      "colorCodes": [
-        "G"
-      ],
-      "colorLabel": "Green",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/b/e/be1d8ebf-efa5-4624-985c-07a85be09258.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/13/elves?utm_source=api"
-    },
-    {
-      "id": "2a871c86-c203-4456-b911-fb8e215e62bf",
-      "collectorNumber": "14",
-      "name": "Enchanted",
-      "colorCodes": [
-        "W"
-      ],
-      "colorLabel": "White",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/2/a/2a871c86-c203-4456-b911-fb8e215e62bf.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/14/enchanted?utm_source=api"
-    },
-    {
       "id": "166523b2-31a5-41db-a19d-8ec08e2e0653",
       "collectorNumber": "15",
       "name": "Feathered Friends",
@@ -184,18 +148,6 @@
       "isMulticolor": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/1/6/166523b2-31a5-41db-a19d-8ec08e2e0653.jpg",
       "scryfallUri": "https://scryfall.com/card/fjmp/15/feathered-friends?utm_source=api"
-    },
-    {
-      "id": "16481c20-92a9-4d1c-8441-1601dce78c42",
-      "collectorNumber": "16",
-      "name": "Garruk",
-      "colorCodes": [
-        "G"
-      ],
-      "colorLabel": "Green",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/1/6/16481c20-92a9-4d1c-8441-1601dce78c42.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/16/garruk?utm_source=api"
     },
     {
       "id": "39f791a4-cfcc-4660-bbaa-7445e07783da",
@@ -382,18 +334,6 @@
       "scryfallUri": "https://scryfall.com/card/fjmp/31/reanimated?utm_source=api"
     },
     {
-      "id": "e11080b5-ec02-4b72-8e65-a0542852f281",
-      "collectorNumber": "32",
-      "name": "Rogues",
-      "colorCodes": [
-        "B"
-      ],
-      "colorLabel": "Black",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/e/1/e11080b5-ec02-4b72-8e65-a0542852f281.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/32/rogues?utm_source=api"
-    },
-    {
       "id": "32da965c-6499-41e4-b16d-754e89cc8aa7",
       "collectorNumber": "33",
       "name": "Seismic",
@@ -428,18 +368,6 @@
       "isMulticolor": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/e/1/e1beb6c6-aa58-4c48-a3ab-df8b7fa98357.jpg",
       "scryfallUri": "https://scryfall.com/card/fjmp/35/spellcasting?utm_source=api"
-    },
-    {
-      "id": "3c449d13-95d8-49b2-af7c-30a0a2aeaed3",
-      "collectorNumber": "36",
-      "name": "Spirits",
-      "colorCodes": [
-        "U"
-      ],
-      "colorLabel": "Blue",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/3/c/3c449d13-95d8-49b2-af7c-30a0a2aeaed3.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/36/spirits?utm_source=api"
     },
     {
       "id": "af16e16e-3d36-4016-8e7d-97c48bc22e2b",
@@ -512,18 +440,6 @@
       "isMulticolor": false,
       "imageUrl": "https://cards.scryfall.io/normal/front/e/7/e7e01b54-ed83-4a3c-9d34-80322b3ba193.jpg",
       "scryfallUri": "https://scryfall.com/card/fjmp/42/vampires?utm_source=api"
-    },
-    {
-      "id": "cef6812d-5f8d-40c8-8935-e5f01a808301",
-      "collectorNumber": "43",
-      "name": "Walls",
-      "colorCodes": [
-        "G"
-      ],
-      "colorLabel": "Green",
-      "isMulticolor": false,
-      "imageUrl": "https://cards.scryfall.io/normal/front/c/e/cef6812d-5f8d-40c8-8935-e5f01a808301.jpg",
-      "scryfallUri": "https://scryfall.com/card/fjmp/43/walls?utm_source=api"
     },
     {
       "id": "45f1e279-9306-45ac-8198-2da6672f452b",

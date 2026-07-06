@@ -24,3 +24,6 @@ The file fmsc-owned.txt contains the FMSC packs that I own. Filter these packs s
 
 [2026-07-06T22:55:23.210+00:00]
 Create a new script to refresh-data when the owner pack list changes.
+
+[2026-07-06T23:07:31.190+00:00]
+Add the FJ22 set
