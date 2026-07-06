@@ -49,6 +49,26 @@ def fetch_cards(set_code: str) -> list[dict]:
     return cards
 
 
+def load_owned_names(project_root: Path, set_code: str) -> set[str] | None:
+    owned_path = project_root / f"{set_code}-owned.txt"
+    if not owned_path.exists():
+        return None
+
+    owned_names = {
+        line.strip().casefold()
+        for line in owned_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    }
+    return owned_names
+
+
+def filter_owned_cards(cards: list[dict], owned_names: set[str] | None) -> list[dict]:
+    if owned_names is None:
+        return cards
+
+    return [card for card in cards if card["name"].strip().casefold() in owned_names]
+
+
 def image_url_for(card_id: str) -> str:
     return f"https://cards.scryfall.io/normal/front/{card_id[0]}/{card_id[1]}/{card_id}.jpg"
 
@@ -123,6 +143,27 @@ def javascript_payload(payload: dict) -> str:
     return f"window.JUMPSTART_SETS = window.JUMPSTART_SETS || {{}};\nwindow.JUMPSTART_SETS[{json.dumps(set_code)}] = {data};\n"
 
 
+def write_payload_files(project_root: Path, set_code: str, output_path: Path | None = None) -> dict:
+    destination = output_path or project_root / "docs" / "data" / f"{set_code}.json"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+
+    cards = fetch_cards(set_code)
+    owned_names = load_owned_names(project_root, set_code)
+    cards = filter_owned_cards(cards, owned_names)
+    payload = build_payload(set_code, cards)
+
+    destination.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+    js_output_path = destination.with_suffix(".js")
+    js_output_path.write_text(javascript_payload(payload), encoding="utf-8")
+
+    ownership_message = "all packs" if owned_names is None else f"{payload['packCount']} owned packs"
+    print(f"Wrote {ownership_message} to {destination}")
+    print(f"Wrote JavaScript payload to {js_output_path}")
+
+    return payload
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Fetch Jumpstart front-card names, colors, and image URLs from Scryfall."
@@ -136,19 +177,8 @@ def main() -> None:
 
     set_code = args.set_code.lower()
     project_root = Path(__file__).resolve().parents[1]
-    output_path = Path(args.output) if args.output else project_root / "docs" / "data" / f"{set_code}.json"
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    cards = fetch_cards(set_code)
-    payload = build_payload(set_code, cards)
-
-    output_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-
-    js_output_path = output_path.with_suffix(".js")
-    js_output_path.write_text(javascript_payload(payload), encoding="utf-8")
-
-    print(f"Wrote {payload['packCount']} packs to {output_path}")
-    print(f"Wrote JavaScript payload to {js_output_path}")
+    output_path = Path(args.output) if args.output else None
+    write_payload_files(project_root, set_code, output_path)
 
 
 if __name__ == "__main__":

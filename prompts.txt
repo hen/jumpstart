@@ -18,3 +18,9 @@ Add a feature where the user can choose between the current default of Avoid Mon
 
 [2026-07-06T22:23:32.274+00:00]
 Add a Set option for All Sets and then randomize across all sets. Also add a Set Vs Set option that randomizes two packs per player, but each player gets a different random set.
+
+[2026-07-06T22:53:23.904+00:00]
+The file fmsc-owned.txt contains the FMSC packs that I own. Filter these packs so that the fmsc.js file only contains the packs I own. If there is no setid-owned.txt file, assume that I own all the packs from that set.
+
+[2026-07-06T22:55:23.210+00:00]
+Create a new script to refresh-data when the owner pack list changes.
