@@ -1,0 +1,20 @@
+[2026-07-06T21:54:00.375+00:00]
+Record all prompts for this development project in prompts.txt.
+
+[2026-07-06T22:00:13.434+00:00]
+I want a website built for use on an iphone 12 mini screen. Recommendation is Viewport Size: 375 × 812 CSS pixels.Landscape Viewport: 812 × 375 CSS pixels. The website is a randomizer for Magic the Gathering Jumpstart decks. The website does not need to know the details of the deck, just the deck name and an image for the front of the deck. For the prototype, build a site that lets the user randomly select 2 packs for each of 2 players. The first player is labelled "Me", the second is labelled "You". Use the data available at scryfall.com to pull the names and images for the Jumpstart Front Cards for a set. The set we will begin with is the Mavel Jumpstart set, with the scryfall set id 'fmsc'. Images can be pulled from a CDN via pattern of "https://cards.scryfall.io/normal/front/ + first_character_of_id + / + second_character_of_id + / + scryfall_id.jpg". The list of front cards can be pulled from https://scryfall.com with q=e:fmsc and include_extras=true. Create a Python3 script to pull the frontpage details for a set. A future mechanism will be to filter these for the packs I actually own, but for now assume I own them all. Another future step will be to generate my own Jumpstart pack ids and images, but don't implement that yet. When randomly selecting 2 packs for a player, ensure that they are not the same color. This means recording what color a pack is as well as its id and name. This rule does not apply to any multicolor packs. Generate this as a static website in a docs/ directory.
+
+[2026-07-06T22:13:29.215+00:00]
+Looking at the site, it says "NetworkError when attempting to fetch resource." under Randomize Packs
+
+[2026-07-06T22:16:06.674+00:00]
+The page should not randomize on loading but only when randomize is pressed the first time.
+
+[2026-07-06T22:17:49.145+00:00]
+Looks good. Now incorporate the first Jumpstart set, 'fjmp'.
+
+[2026-07-06T22:21:27.158+00:00]
+Add a feature where the user can choose between the current default of Avoid Monocolor, Monocolor, and Fully Random
+
+[2026-07-06T22:23:32.274+00:00]
+Add a Set option for All Sets and then randomize across all sets. Also add a Set Vs Set option that randomizes two packs per player, but each player gets a different random set.

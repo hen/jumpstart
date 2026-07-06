@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Iterable
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+
+
+API_ROOT = "https://api.scryfall.com/cards/search"
+COLOR_ORDER = ("W", "U", "B", "R", "G")
+COLOR_NAMES = {
+    "W": "White",
+    "U": "Blue",
+    "B": "Black",
+    "R": "Red",
+    "G": "Green",
+}
+
+
+def build_search_url(set_code: str) -> str:
+    return f"{API_ROOT}?{urlencode({'q': f'e:{set_code}', 'unique': 'cards', 'include_extras': 'true', 'order': 'set'})}"
+
+
+def fetch_json(url: str) -> dict:
+    request = Request(
+        url,
+        headers={
+            "User-Agent": "jumpstart-randomizer-prototype/1.0",
+            "Accept": "application/json",
+        },
+    )
+    with urlopen(request) as response:
+        return json.load(response)
+
+
+def fetch_cards(set_code: str) -> list[dict]:
+    url = build_search_url(set_code)
+    cards: list[dict] = []
+
+    while url:
+        payload = fetch_json(url)
+        cards.extend(payload.get("data", []))
+        url = payload.get("next_page") if payload.get("has_more") else None
+
+    return cards
+
+
+def image_url_for(card_id: str) -> str:
+    return f"https://cards.scryfall.io/normal/front/{card_id[0]}/{card_id[1]}/{card_id}.jpg"
+
+
+def unique_in_order(values: Iterable[str]) -> list[str]:
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for value in values:
+        if value not in seen:
+            seen.add(value)
+            ordered.append(value)
+    return ordered
+
+
+def derive_color_codes(card: dict) -> list[str]:
+    oracle_text = (card.get("oracle_text") or "").upper()
+
+    mana_symbols = re.findall(r"\{([WUBRG])\}", oracle_text)
+    if mana_symbols:
+        return unique_in_order(mana_symbols)
+
+    fallback_letters = re.findall(r"\b([WUBRG]{1,5})\b", oracle_text)
+    if fallback_letters:
+        letters = [letter for chunk in fallback_letters for letter in chunk]
+        ordered = [color for color in COLOR_ORDER if color in letters]
+        return unique_in_order(ordered)
+
+    return []
+
+
+def collector_sort_key(value: str) -> tuple[int, str]:
+    match = re.match(r"(\d+)(.*)", value)
+    if not match:
+        return (10**9, value)
+    return (int(match.group(1)), match.group(2))
+
+
+def transform_card(card: dict) -> dict:
+    color_codes = derive_color_codes(card)
+    is_multicolor = len(color_codes) > 1
+    color_label = " / ".join(COLOR_NAMES[code] for code in color_codes) if color_codes else "Colorless"
+
+    return {
+        "id": card["id"],
+        "collectorNumber": card["collector_number"],
+        "name": card["name"],
+        "colorCodes": color_codes,
+        "colorLabel": color_label,
+        "isMulticolor": is_multicolor,
+        "imageUrl": image_url_for(card["id"]),
+        "scryfallUri": card["scryfall_uri"],
+    }
+
+
+def build_payload(set_code: str, cards: list[dict]) -> dict:
+    sorted_cards = sorted(cards, key=lambda card: collector_sort_key(card["collector_number"]))
+    set_name = sorted_cards[0]["set_name"] if sorted_cards else set_code.upper()
+
+    return {
+        "setCode": set_code,
+        "setName": set_name,
+        "sourceUrl": f"https://scryfall.com/search?q=e%3A{set_code}&include_extras=true",
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "packCount": len(sorted_cards),
+        "packs": [transform_card(card) for card in sorted_cards],
+    }
+
+
+def javascript_payload(payload: dict) -> str:
+    set_code = payload["setCode"]
+    data = json.dumps(payload, indent=2)
+    return f"window.JUMPSTART_SETS = window.JUMPSTART_SETS || {{}};\nwindow.JUMPSTART_SETS[{json.dumps(set_code)}] = {data};\n"
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Fetch Jumpstart front-card names, colors, and image URLs from Scryfall."
+    )
+    parser.add_argument("set_code", help="Scryfall set code, such as fmsc")
+    parser.add_argument(
+        "--output",
+        help="Output JSON path. Defaults to docs/data/<set_code>.json",
+    )
+    args = parser.parse_args()
+
+    set_code = args.set_code.lower()
+    project_root = Path(__file__).resolve().parents[1]
+    output_path = Path(args.output) if args.output else project_root / "docs" / "data" / f"{set_code}.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    cards = fetch_cards(set_code)
+    payload = build_payload(set_code, cards)
+
+    output_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+    js_output_path = output_path.with_suffix(".js")
+    js_output_path.write_text(javascript_payload(payload), encoding="utf-8")
+
+    print(f"Wrote {payload['packCount']} packs to {output_path}")
+    print(f"Wrote JavaScript payload to {js_output_path}")
+
+
+if __name__ == "__main__":
+    main()

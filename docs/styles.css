@@ -1,0 +1,190 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --bg: #0f1220;
+  --panel: rgba(24, 30, 53, 0.92);
+  --panel-border: rgba(255, 255, 255, 0.12);
+  --text: #f3f4f8;
+  --muted: #c2c8db;
+  --accent: #7c9bff;
+  --accent-strong: #99b0ff;
+  --badge: rgba(255, 255, 255, 0.12);
+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(124, 155, 255, 0.24), transparent 42%),
+    linear-gradient(180deg, #15192d 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+.app-shell {
+  width: min(100%, 375px);
+  min-height: 812px;
+  margin: 0 auto;
+  padding: 20px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero,
+.controls,
+.player-panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.hero,
+.controls {
+  padding: 18px;
+}
+
+.hero h1,
+.player-heading h2 {
+  margin: 0;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.subtitle,
+.player-heading p,
+.status-message {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.control-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.set-select {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.randomize-button {
+  border: 0;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font: inherit;
+  font-weight: 700;
+  color: #111528;
+  background: linear-gradient(135deg, #e2e8ff 0%, #7c9bff 100%);
+}
+
+.players {
+  display: grid;
+  gap: 16px;
+}
+
+.player-panel {
+  padding: 16px;
+}
+
+.player-heading {
+  margin-bottom: 14px;
+}
+
+.pack-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.pack-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.pack-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pack-card-body {
+  padding: 12px;
+}
+
+.pack-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pack-meta {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-badge,
+.set-badge,
+.pack-number {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--badge);
+  font-size: 0.76rem;
+}
+
+.pack-number {
+  color: var(--muted);
+}
+
+@media (orientation: landscape) {
+  .app-shell {
+    width: min(100%, 812px);
+    min-height: 375px;
+    padding: 16px;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pack-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

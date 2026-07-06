@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jumpstart Randomizer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./data/fmsc.js"></script>
+    <script src="./data/fjmp.js"></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Magic: The Gathering Jumpstart</p>
+        <h1>Jumpstart pack randomizer</h1>
+        <p class="subtitle">Choose a set, then deal two packs each for <strong>Me</strong> and <strong>You</strong>.</p>
+      </header>
+
+      <section class="controls">
+        <label class="control-field">
+          <span class="control-label">Set</span>
+          <select id="set-select" class="set-select"></select>
+        </label>
+        <label class="control-field">
+          <span class="control-label">Pairing Mode</span>
+          <select id="mode-select" class="set-select">
+            <option value="avoid-monocolor">Avoid Monocolor</option>
+            <option value="monocolor">Monocolor</option>
+            <option value="fully-random">Fully Random</option>
+          </select>
+        </label>
+        <button id="randomize-button" class="randomize-button" type="button">Randomize packs</button>
+        <p id="status-message" class="status-message" aria-live="polite">Loading packs…</p>
+      </section>
+
+      <section id="players" class="players" hidden>
+        <article class="player-panel">
+          <div class="player-heading">
+            <h2>Me</h2>
+            <p id="me-description">Two packs from the selected set using the chosen pairing mode.</p>
+          </div>
+          <div id="me-packs" class="pack-grid"></div>
+        </article>
+
+        <article class="player-panel">
+          <div class="player-heading">
+            <h2>You</h2>
+            <p id="you-description">Built from the same selected Jumpstart front-card pool.</p>
+          </div>
+          <div id="you-packs" class="pack-grid"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
